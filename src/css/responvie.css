@@ -1,16 +1,7 @@
 @media (max-width: 780px) {
-
     .menu {
         justify-content: center;
-        margin: 0px 5px;
-    }
-
-    .imagem > img{
-        width: 70%;
-    }
-
-    .links {
-        padding: 6px;
+        margin: 0px;
     }
 
     .titulo {
@@ -24,21 +15,32 @@
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 770px) and (max-height: 500px) and (orientation: landscape) {
+    .imagem > img {
+        width: 50%;
+    }
+}
 
+
+@media (max-width: 410px) {
+    #curiosidades {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
     .cabecalho h1 {
         font-size: 2.5em;
     }
 
     .cabecalho p {
-        font-size: 0.9em;
+        font-size: 1.1em;
         line-height: 20px;
         margin: 0px 10px;
     }
 
-    .links {
-        padding: 5px;
-        font-size: 0.9em;
+    .menu {
+        justify-content: start;
     }
 
     .titulo {
@@ -47,6 +49,6 @@
 
     .lista {
         padding-left: 30px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
