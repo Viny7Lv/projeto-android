@@ -1,0 +1,52 @@
+@media (max-width: 780px) {
+
+    .menu {
+        justify-content: center;
+        margin: 0px 5px;
+    }
+
+    .imagem > img{
+        width: 70%;
+    }
+
+    .links {
+        padding: 6px;
+    }
+
+    .titulo {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .creditos > p{
+        text-align: center;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .cabecalho h1 {
+        font-size: 2.5em;
+    }
+
+    .cabecalho p {
+        font-size: 0.9em;
+        line-height: 20px;
+        margin: 0px 10px;
+    }
+
+    .links {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .titulo {
+        margin: 10px 0px;
+    }
+
+    .lista {
+        padding-left: 30px;
+        font-size: 1em;
+    }
+}

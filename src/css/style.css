@@ -1,0 +1,218 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../font/idroid.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Segoe Ui';
+    src: url(../font/Segoe\ UI.ttf);
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --font-padrão: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+    --font-extra:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+.cabecalho {
+    background-image: linear-gradient(to bottom, #05b454, var(--cor5));
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.386);
+}
+
+.destaque {
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.322);
+    padding: 40px 0px 30px 0px;
+}
+
+
+.destaque > h1 {
+    font: normal lighter 3em var(--font-destaque);
+    padding-bottom: 20px;
+}
+
+.destaque > p {
+    font-size: 1.2em;
+    text-align: center;
+    text-indent: 0;
+    margin: 0px 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 10px;
+    margin-left: 7px;
+}
+
+.links {
+    color: #8af7bb;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: normal;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.links:hover {
+    transition-duration: 0.5s;
+    color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+.principal {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.titulo {
+    font: normal normal 1.8em var(--font-android);
+    color: var(--cor5);
+}
+
+p {
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 30px;
+    font-size: 1em;
+    margin: 10px 0px;
+}
+
+.subtitulo {
+    font: normal normal 1.4em var(--font-android);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: var(--cor4);
+    padding: 5px;
+}
+
+.destacado {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+.links02 {
+    color: var(--cor5);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--cor1);
+    padding: 3px;
+    margin: 0px 1px;
+    font-size: 1.05em;
+}
+
+.links02:after {
+    content: '\00A0\1F517';
+}
+
+.links02:hover {
+    color: white;
+    background-color: var(--cor5);
+}
+
+.imagem > img {
+    display: block;
+    width: 100%;
+}
+
+picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 51.5%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+}
+
+.extra {
+    background-color: var(--cor1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+}
+
+.extra > h1 {
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--cor4);
+    font-weight: lighter;
+    font-size: 1.4em;
+    color: white;
+    padding: 10px;
+    font-family: var(--font-extra);
+
+}
+
+.extra > p {
+    padding: 10px;
+    font-family: var(--font-extra);
+}
+
+.lista {
+    padding-left: 40px;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0 ';
+    font-family: var(--font-extra);
+}
+
+.creditos {
+    background-color: var(--cor5);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.creditos > p {
+    text-align: center;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1em;
+    text-indent: 0;
+}
+
+.links03 {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.links03:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
